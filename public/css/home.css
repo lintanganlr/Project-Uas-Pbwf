@@ -1,0 +1,249 @@
+/* home.css */
+
+/* Style the navbar */
+.navbar {
+  background-color: #F0EDD4;
+  padding: 10px;
+}
+
+
+/* Style the perusahaan div */
+.perusahaan {
+  float: left;
+}
+
+/* Style the perusahaan div image */
+.perusahaan img {
+  width: 60px;
+  height: 60px;
+  margin-left: 40px;
+}
+
+
+/* Style the navbar links */
+.nav-link {
+  color: darkgrey;
+}
+
+.nav-link:hover {
+  color: black;
+  background-color: #dba39a3b;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-weight: normal;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #DBA39A;
+  color: whitesmoke;
+  font-weight: normal;
+}
+
+.nav-pills .nav-link {
+  background-color: #dba39a3b;
+  color: #000000;
+  font-weight: normal;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #dba39a3b;
+  color: #000000;
+  font-weight: normal;
+}
+
+/* Style the active link */
+.nav-link.active {
+  font-weight: normal;
+}
+
+/* Style the search form */
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #dc7896;
+  padding: 5px 10px;
+}
+
+/* Style the search button */
+
+.btn-outline-success{
+  background-color: transparent;
+  border-color: #dc7896;
+  color: #dc7896;
+}
+.btn-outline-success:hover{
+  color: #ECCDB4;
+}
+.search:hover{
+  color:#ECCDB4;
+}
+
+
+/* Style the cart icon */
+.nav-link .fas.fa-shopping-cart {
+  color: #c40847;
+}
+.nav-link .fas.fa-shopping-cart:hover{
+  color: #ECCDB4;
+}
+
+/*CSS for section on a main */
+section{
+  min-height: 200vh;
+  background-color: #F9FBE7;
+}
+
+/* CSS for the footer */
+footer{
+  background-color: #F0EDD4;
+  padding: 20px;
+  position: static;
+}
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.gap-4 > * {
+  margin-right: 1rem;
+}
+
+/* Title styles */
+.header-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styles */
+.title-left p {
+  font-size: 14px;
+}
+
+/* Address styles */
+.title-middle address {
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+/* Social media icon styles */
+.title-sosmed i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* Adjust the colors as per your preference */
+.title-sosmed i.fa-instagram {
+  color: #e4405f;
+}
+
+.title-sosmed i.fa-twitter {
+  color: #1da1f2;
+}
+
+.title-sosmed i.fa-tiktok {
+  color: #000000;
+}
+
+.title-sosmed i.fa-whatsapp {
+  color: #25d366;
+}
+
+.title-sosmed i.fa-envelopes {
+  color: #333333;
+}
+
+/* JS UNTUK GAMBAR YANG BISA DISLIDE OTOMATIS */
+/* File CSS Anda */
+
+/* Gaya untuk container gambar */
+.container {
+  max-width: 1000px; /* Sesuaikan lebar container sesuai kebutuhan */
+  margin: 0 auto; /* Pusatkan container */
+  overflow: hidden;
+  position: relative;
+  padding-top: 1cm;
+}
+
+/* Gaya untuk slider container */
+.slider-container {
+  display: flex;
+  transition: transform 0.3s ease; /* Efek transisi saat slide berubah */
+}
+
+/* Gaya untuk slide */
+.slider {
+  flex: 0 0 100%; /* Lebar masing-masing slide */
+}
+
+/* Gaya untuk tombol prev dan next */
+.slider-controls {
+  display: flex;
+  justify-content: space-between; /* Letakkan tombol prev dan next di sisi kiri dan kanan */
+  margin-top: 10px;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: #f1f1f1;
+  border: none;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: #ddd;
+}
+
+/* GAMBAR MINI LAUNCHING PRUDCT */
+.centered-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3vh; /* Anda dapat menyesuaikan tinggi sesuai kebutuhan */
+}
+
+/*css untuk product yang di home */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Menengahkan kontainer produk */
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  width: calc(20% - 20px); /* Ubah dari 25% menjadi 20% untuk menampung 5 gambar dalam satu baris */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px; /* Ubah padding menjadi 20px untuk membuat kotak lebih besar */
+  text-align: center;
+}
+
+.product img {
+  width: 100%; /* Ubah max-width menjadi width agar gambar memenuhi ukuran kotak */
+  height: auto;
+  border-radius: 5px; /* Tambahkan border-radius untuk menyesuaikan dengan kotak */
+}
+
+.product h3 {
+  margin: 10px 0;
+  font-size: 16px; /* Tambahkan ukuran font h3 menjadi 16px */
+}
+
+.product p {
+  font-weight: bold;
+  color: #555;
+  font-size: 10px; /* Tambahkan ukuran font p menjadi 10px */
+}
+
