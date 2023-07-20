@@ -5,9 +5,6 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PemesananController;
 use App\Http\Controllers\PembayaranController;
 use App\Http\Controllers\MetodePembayaranController;
-use App\Http\Controllers\TunaiController;
-use App\Http\Controllers\TransferController;
-use App\Http\Controllers\DompetElektronikController;
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\HistoriPemesananController;
 use App\Http\Controllers\KategoriBarangController;
@@ -60,29 +57,7 @@ Route::get('MetodePembayaran/{id}/edit', [MetodePembayaranController::class, 'ed
 Route::put('MetodePembayaran/{id}', [MetodePembayaranController::class, 'update'])->name('MetodePembayaran.update');
 Route::delete('MetodePembayaran/{id}', [MetodePembayaranController::class, 'destroy'])->name('MetodePembayaran.destroy');
 
-Route::resource('Tunai', TunaiController::Class);
-Route::get('Tunai', [TunaiController::class, 'index'])->name('Tunai.index');
-Route::get('Tunai/create', [TunaiController::class, 'create'])->name('Tunai.create');
-Route::post('Tunai', [TunaiController::class, 'store'])->name('Tunai.store');
-Route::get('Tunai/{id}/edit', [TunaiController::class, 'edit'])->name('Tunai.edit');
-Route::put('Tunai/{id}', [TunaiController::class, 'update'])->name('Tunai.update');
-Route::delete('Tunai/{id}', [TunaiController::class, 'destroy'])->name('Tunai.destroy');
 
-Route::resource('Transfer', TransferController::Class);
-Route::get('Transfer', [TransferController::class, 'index'])->name('Transfer.index');
-Route::get('Transfer/create', [TransferController::class, 'create'])->name('Transfer.create');
-Route::post('Transfer', [TransferController::class, 'store'])->name('Transfer.store');
-Route::get('Transfer/{id}/edit', [TransferController::class, 'edit'])->name('Transfer.edit');
-Route::put('Transfer/{id}', [TransferController::class, 'update'])->name('Transfer.update');
-Route::delete('Transfer/{id}', [TransferController::class, 'destroy'])->name('Transfer.destroy');
-
-Route::resource('DompetElektronik', DompetElektronikController::Class);
-Route::get('DompetElektronik', [DompetElektronikController::class, 'index'])->name('DompetElektronik.index');
-Route::get('DompetElektronik/create', [DompetElektronikController::class, 'create'])->name('DompetElektronik.create');
-Route::post('DompetElektronik', [DompetElektronikController::class, 'store'])->name('DompetElektronik.store');
-Route::get('DompetElektronik/{id}/edit', [DompetElektronikController::class, 'edit'])->name('DompetElektronik.edit');
-Route::put('DompetElektronik/{id}', [DompetElektronikController::class, 'update'])->name('DompetElektronik.update');
-Route::delete('DompetElektronik/{id}', [DompetElektronikController::class, 'destroy'])->name('DompetElektronik.destroy');
 
 Route::resource('Barang', BarangController::Class);
 Route::get('Barang', [BarangController::class, 'index'])->name('barang-index');
