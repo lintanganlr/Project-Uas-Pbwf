@@ -48,7 +48,7 @@
                     <img src="https://down-id.img.susercontent.com/file/id-11134207-23010-55e2qyey1kmve9" alt="Product 1">
                 </a>
                 <h3>SWEATER Oversize 199X</h3>
-                <p>Price: $10.99</p>
+                <p>Price: Rp135.000</p>
             </div>
 
             <!-- Product 2 -->

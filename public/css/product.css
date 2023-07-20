@@ -1,0 +1,41 @@
+/*css untuk product yang di home */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Menengahkan kontainer produk */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .product {
+    width: calc(20% - 20px); /* Ubah dari 25% menjadi 20% untuk menampung 5 gambar dalam satu baris */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px; /* Ubah padding menjadi 20px untuk membuat kotak lebih besar */
+    text-align: center;
+  }
+  
+  .product img {
+    width: 100%; /* Ubah max-width menjadi width agar gambar memenuhi ukuran kotak */
+    height: auto;
+    border-radius: 5px; /* Tambahkan border-radius untuk menyesuaikan dengan kotak */
+  }
+  
+  .product h3 {
+    margin: 10px 0;
+    font-size: 16px; /* Tambahkan ukuran font h3 menjadi 16px */
+  }
+  
+  .product p {
+    font-weight: bold;
+    color: #555;
+    font-size: 10px; /* Tambahkan ukuran font p menjadi 10px */
+  }
+  
+  

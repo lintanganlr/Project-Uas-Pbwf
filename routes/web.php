@@ -29,6 +29,8 @@ Route::get('/login', function () {
     return view("login");
 });
 
+Route::get('/about', [AboutController::class, 'index'])->name('about');
+
 Route::get('/register', function () {
     return view("register");
 });
@@ -60,7 +62,7 @@ Route::delete('MetodePembayaran/{id}', [MetodePembayaranController::class, 'dest
 
 
 Route::resource('Barang', BarangController::Class);
-Route::get('Barang', [BarangController::class, 'index'])->name('barang-index');
+Route::get('barang', [BarangController::class, 'index'])->name('barang.index');
 Route::get('Barang/create', [BarangController::class, 'create'])->name('Barang.create');
 Route::post('Barang', [BarangController::class, 'store'])->name('Barang.store');
 Route::get('Barang/{id}/edit', [BarangController::class, 'edit'])->name('Barang.edit');
